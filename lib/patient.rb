@@ -21,7 +21,7 @@ end
   end
 
   def doctors
-  Appointment.all.map { | app| app.doctor } 
+  self.appointments.map { | app| app.doctor } 
   
 end
 end 
